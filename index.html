@@ -122,11 +122,12 @@
     z-index: 2;
     padding: 0 48px;
     max-width: 900px;
+    margin-top: 100px;
   }
 
   .hero-eyebrow {
     font-family: var(--font-condensed);
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.3em;
     text-transform: uppercase;
@@ -156,15 +157,19 @@
 
   .hero-sub {
     font-family: var(--font-sans);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     color: var(--off-white-dim);
-    max-width: 420px;
+    max-width: 640px;
     margin-bottom: 40px;
     line-height: 1.75;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 0.9s ease 0.8s forwards;
+  }
+  .sub-phrase {
+    display: inline-block;
+    white-space: nowrap;
   }
 
   .hero-cta-wrap {
@@ -317,11 +322,12 @@
   /* ─── WHAT WE DO ─── */
   .pillars-section {
     background: var(--black-2);
-    padding: 120px 48px;
+    padding: 120px 0;
   }
 
   .pillars-header {
     margin-bottom: 72px;
+    padding: 0 48px;
   }
 
   .pillars-headline {
@@ -676,7 +682,7 @@
 
   .cta-eyebrow {
     font-family: var(--font-condensed);
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 0.35em;
     text-transform: uppercase;
     color: var(--accent);
@@ -779,6 +785,7 @@
     .who-sticky { position: static; }
     .who-image-wrap { display: none; }
     .pillars-grid { grid-template-columns: 1fr; }
+    .pillars-header { padding: 0 24px; }
     .pillar-card { aspect-ratio: 16/9; }
     .code-header { grid-template-columns: 1fr; gap: 20px; }
     .profile-inner { flex-direction: column; gap: 16px; }
@@ -787,6 +794,9 @@
     .divider { margin: 0 24px; width: calc(100% - 48px); }
     .cta-section { padding: 100px 24px; }
     .profile-section { padding: 60px 24px; }
+  }
+  @media (max-width: 560px) {
+    .sub-phrase { display: block; }
   }
 </style>
 </head>
@@ -808,8 +818,8 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">A community of men doing the work</p>
-    <h1 class="hero-title">Where high-performers<br><em>come to go deeper.</em></h1>
-    <p class="hero-sub">Meditation. Honest council. Brotherhood. A place to process what success can't solve.</p>
+    <h1 class="hero-title">Where high-performing men<br><em>do the inner work.</em></h1>
+    <p class="hero-sub"><span class="sub-phrase">Mindful practice.</span> <span class="sub-phrase">Honest conversation.</span> <span class="sub-phrase">Real brotherhood.</span></p>
     <div class="hero-cta-wrap">
       <a href="https://zi1v4v5k7nd.typeform.com/to/CMDes8AK?typeform-source=www.wholesome.guide" class="btn-primary" target="_blank" rel="noopener"><span>Apply to Join</span></a>
     </div>
@@ -832,7 +842,7 @@
         <p class="reveal reveal-delay-1">We meet once a month — to meditate, to breathe, to speak honestly about what's going on in our lives. It's a space to process, to be heard, and to stay accountable to the kind of man you're trying to become.</p>
         <p class="reveal reveal-delay-2">Outside of calls, we stay connected. We show up for each other when it's needed — <strong>not out of obligation, but because we've built real trust.</strong></p>
         <p class="reveal reveal-delay-3">A few times a year, we meet in person. Time together in the real world to deepen what we've built online.</p>
-        <p class="reveal reveal-delay-4">Most of the men here are high-performers — entrepreneurs, executives, fathers — but that's not the point. <strong>What matters is that you're doing the work.</strong></p>
+        <p class="reveal reveal-delay-4">The men here are driven — entrepreneurs, executives, creatives, fathers — but that's not the point. <strong>What matters is that you're doing the work.</strong></p>
       </div>
     </div>
   </div>
@@ -943,7 +953,7 @@
 <div class="profile-section">
   <div class="profile-inner">
     <div class="profile-quote-mark">&ldquo;</div>
-    <p class="profile-text reveal">Most of our men are entrepreneurs, executives, or fathers in their 30s and 40s. <em>What they share isn't a job title — it's a willingness to go deeper.</em></p>
+    <p class="profile-text reveal">Most of our men are entrepreneurs, executives, or fathers in their 30s and 40s. <em>What they share isn't a job title — it's a willingness to be honest and go deeper.</em></p>
   </div>
 </div>
 
